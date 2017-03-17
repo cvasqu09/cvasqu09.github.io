@@ -9,7 +9,32 @@
 	<body>
 		<h1> Heading </h1>
         <div class="tab">
-            <button class="tablinks" onclick="open"
+            <button class="tablinks" onclick="openTab(event, 'Project')">
+                Project
+            </button>
+            
+            <button class="tablinks" onclick="openTab(event, 'Members')">
+                Members
+            </button>
+            
+            <button class="tablinks" onclick="openTab(event, 'Links')">
+                Links
+            </button>
+        </div>
+        
+        <div id="Project" class="tabcontent">
+            <h3>Project</h3>
+            <p>Here is where the project information will go.</p>
+        </div>
+        
+        <div id="Members" class="tabcontent">
+            <h3>Members</h3>
+            <p>Add each of the members here.</p>
+        </div>
+        
+        <div id="Links" class="tabcontent">
+            <h3>Links</h3>
+            <p>Any links will go here.</p>
         </div>
         
 	</body>
